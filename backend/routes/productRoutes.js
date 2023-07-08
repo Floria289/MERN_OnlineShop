@@ -1,19 +1,8 @@
 import express from "express";
-import {
-  getProducts,
-  getProductById,
-} from "../controllers/productController.js";
-
+import { getProductById } from "../controllers/productcONTROLLER.JS";
 const router = express.Router();
 
-router.get(
-  "/",
-  asyncHandler(async (req, res) => {})
-);
-
-router.get(
-  "/:id",
-  asyncHandler(async (req, res) => {})
-);
+router.route("/").get(getProducts);
+router.route("/:id").get(getProductById);
 
 export default router;
