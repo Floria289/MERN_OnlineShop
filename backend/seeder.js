@@ -7,7 +7,6 @@ import User from "./models/userModel.js";
 import Product from "./models/productModel.js";
 import Order from "./models/orderModel.js";
 import connectDB from "./config/db.js";
-import { async } from "rxjs";
 
 dotenv.config();
 
